@@ -19,6 +19,10 @@ ul {
 h1,h2,h3,p {
     margin: 0;
 }
+img {
+    display: block;
+    max-width: 100%;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -56,6 +60,7 @@ align-items: center;
 .site-nav .item:last-child {
     margin-right: 0px;
 }
+
 .contact-info {
     display: flex;
     margin-left: auto;
@@ -93,6 +98,13 @@ align-items: center;
 .link:focus{
     color: var(--accent-color);
 }
+/* .link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    color: var(--accent-color);
+    height: 4px;
+} */
 .overlay {
     max-width: 1600px;
     height: 600px;
@@ -476,7 +488,7 @@ align-items: center;
     border-top: none;
     padding: 20px 24px;
 }
-.overlay-text {
+.overlay-thumb {
     position: relative;
     color: var(--primary-white-color);
     font-size: 18px;    
@@ -485,7 +497,7 @@ align-items: center;
     letter-spacing: 0.03em;
     overflow: hidden;
 }
-.overlay-par {
+.overlay-text {
     display: inline-block;
     position: absolute;
     top: 0%;
@@ -497,11 +509,15 @@ align-items: center;
     opacity: 0;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 63px 24px ;
 }
-.flex-link:hover .overlay-par,
-.flex-link:focus .overlay-par{
+.flex-link:hover .overlay-text,
+.flex-link:focus .overlay-text{
     opacity: 1;
     transform: translateY(0);
+}
+.overlay-par {
+    
 }
 .main-info .info-header{
     font-size: 18px;

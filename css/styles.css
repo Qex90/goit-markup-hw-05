@@ -84,7 +84,7 @@ align-items: center;
     color: var(--accent-color);
 }
 
-.link{
+.link {
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -93,18 +93,32 @@ align-items: center;
     text-align: left;
     color: inherit;
     text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* .link-header {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+/* .link-header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    color: red;
+    height: 10px;
+} */
 .link:hover,
 .link:focus{
     color: var(--accent-color);
 }
-/* .link::after {
-    content: '';
-    display: block;
-    width: 100%;
-    color: var(--accent-color);
-    height: 4px;
-} */
 .overlay {
     max-width: 1600px;
     height: 600px;
@@ -302,6 +316,8 @@ align-items: center;
     height: 44px;
     border-radius: 50%;
     background-color: var(--primary-white-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icons-link:hover, 
 .socials-icons-link:focus {
@@ -329,6 +345,8 @@ align-items: center;
     align-items: center;
     cursor: pointer;
     fill: #AFB1B8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icons-item:not(:last-child) {
     margin-right: 30px;
@@ -375,6 +393,8 @@ align-items: center;
     height: 44px;
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons-link:hover, 
 .footer-icons-link:focus {
@@ -440,7 +460,9 @@ align-items: center;
     background-color: var(--primary-bg-color);
     text-decoration: none;
     color: var(--title-text-color); 
-    text-align: center;   
+    text-align: center; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .button-list li button:hover , 
@@ -474,6 +496,8 @@ align-items: center;
 }
 .flex-link {
     display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-link:hover, 
 .flex-link:focus {
@@ -568,4 +592,7 @@ align-items: center;
     position: absolute;
     top: 8px;
     right: 8px;
+}
+.cross-icon {
+    border-radius: 50px;
 }

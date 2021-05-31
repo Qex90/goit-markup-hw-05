@@ -298,7 +298,7 @@ align-items: center;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.03em;
-    margin: 0px;
+    margin: 0px 0px 16px 0px;
 }
 .member-list {
     display: flex;
@@ -589,6 +589,8 @@ align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
     opacity: 0;
@@ -608,7 +610,6 @@ align-items: center;
     position: absolute;
     top: 8px;
     right: 8px;
-}
-.cross-icon {
     border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
